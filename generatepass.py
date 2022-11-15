@@ -1,4 +1,5 @@
 import random 
+import pyperclip as pc 
 
 def generatepassword(x):
     max_char=0
@@ -22,3 +23,4 @@ def generatepassword(x):
 level=input("seleccione nivel de seguridad (low/middle/high): ")
 pw=generatepassword(level)
 print(pw)
+pc.copy(pw)
